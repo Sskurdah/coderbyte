@@ -4,7 +4,21 @@
 #
 # Difficulty: easy.
 
+# why can't i put all vowels into one array?? 
+
 def count_vowels(string)
+  vowel_count = 0 
+  i = 0 
+  
+  while i < string.length 
+  
+  if (string[i] == "a" || string[i] == "e" || string[i] == "o" || string[i] == "i" || string[i] == "u")
+    vowel_count += 1 
+  end 
+  i += 1 
+end
+
+return vowel_count
 end
 
 # These are tests to check that your code is working. After writing
