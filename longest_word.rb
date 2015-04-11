@@ -27,8 +27,9 @@ if longest_word == nil
   #then the longest word is whatever position you are at  
   longest_word == current_word
   
-  #if the longest 
-elsif longest_word.length < current_word.length
+  #if the longest word length (nil?) is less than the length of current word length 
+  #(remember current word is at position word_idx)
+  elsif longest_word.length < current_word.length
 longest_word = current_word 
 end
 
