@@ -7,11 +7,36 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
-#
+
+#split sentence in words kept in array words 
 words = sentence.split(" ")
 
+# sets up empty variable longest_word (is this not definted already...?)
+longest_word = nil 
 
+#sets up counter, sets equal to 0 
+words_idx = 0 
+
+#sets up while statement, constrains loops 
+while words_idx < words.length
+#defines current words as word position in array based on counter 
+current_word = words[words_idx]
+
+#if the longest word is nil (it is, set equal to nil above)
+if longest_word == nil 
+  #then the longest word is whatever position you are at  
+  longest_word == current_word
+  
+  #if the longest 
+elsif longest_word.length < current_word.length
+longest_word = current_word 
 end
+
+words_idx += 1 
+end 
+
+return longest_word
+end 
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
